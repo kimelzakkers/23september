@@ -1,0 +1,239 @@
+html {
+    background: url(../images/achtergrond2.jpg);
+    background-size: cover no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: avenir;
+}
+
+header {
+    background-color: white;
+    margin: -0.7em -0.5em 1em -0.5em;
+    padding: 1.8vh;
+    box-shadow: 0px 21px 56px -16px rgba(128, 128, 128, 0.69);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#transavialogo {
+    max-height: 5vh;
+    margin-right: 10%
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+
+/*menuutje*/
+
+#menuKlik {
+    display: block;
+    position: relative;
+    top: .2em;
+    z-index: 1;
+    user-select: none;
+}
+
+#menuKlik1 {
+    height: 2em;
+}
+
+#menuKlik input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    touch-callout: none;
+}
+
+
+
+
+#menu {
+    position: absolute;
+    width: 200px;
+    margin: -20em -20em 0 -11.5em;
+    padding: 10px;
+    padding-top: 100px;
+    border-radius: 1.5em;
+    background: #3d1aa8;
+    opacity: 0.9;
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transform: translate(0, 100%);
+    transition: transform 0.5s cubic-bezier(0.50, 0.2, 0.05, 0.9);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+p {
+    margin-top: -0.9em;
+    font-style: bold;
+    color: white;
+    float: right;
+    margin-right: .1em;
+    font-size: 1.2em;
+}
+
+
+/*
+ * binnenkomen vanuit boven
+ */
+
+#menuKlik input:checked ~ ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+}
+
+/*einde menu*/
+
+#zoekfunctie {
+     background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1.5em;
+    padding: 1.5em;
+    margin: 1.5em;
+    max-width: 45em;
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#titel {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    color: #4fcf56;
+}
+
+.button{
+    background-color: rgb(233, 63, 90);
+    box-shadow: 0 -0.3em 0 rgba(0,0,0,.1) inset;
+    border-color: transparent;
+    margin-bottom: 1.0em;
+    padding: 1em;
+    border-radius: 1.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7em;
+        display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.button1{
+    background-color: #3d1aa8;
+    box-shadow: 0 -0.3em 0 rgba(0,0,0,.1) inset;
+    border-color: transparent;
+    padding: 1em;
+    border-radius: 1.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7em;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+#titelzoek {
+      width: 80%;
+    border-radius: 1em;
+    border-color: transparent;
+    box-shadow: 0 0.3em 0 rgba(0,0,0,0.3);
+    font-family: avenir;
+    font-size:.8em;
+    color: grey;
+    padding-left: 1.3em;
+    line-height: 2.4em;
+}
+
+#zoek {
+    background-color: #4fcf56;
+    box-shadow: 0 -0.3em 0 rgba(0,0,0,.1) inset;
+    border-color: transparent;
+    margin-bottom: 1.0em;
+    padding: 1em;
+    max-width: 10%;
+    border-radius: 1.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+.boeken {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    min-height: 60vh;
+    max-width: 50em;
+}
+
+#verderlezen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+}
+
+#bewaard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    width: 100%;
+    overflow: auto;
+}
+
+#nieuw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+    overflow: auto;
+}
+
+#populair {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    overflow: auto;
+}
+
+#voorjou {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    overflow: auto;
+}
+
+#boek {
+    max-height: 13vh;
+    padding: 1vh;
+}
+
